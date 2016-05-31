@@ -1,0 +1,337 @@
+ <!doctype html>
+  <html>
+  <head>
+  <meta charset="utf-8">
+  <title> Aplicacion final</title>
+ 
+  <!--grupo CSS-->
+  <link rel="stylesheet" href="css/temas4g.min.css"/>
+  <link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css"/>
+  <link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css"/>
+  <!--grupo JavaScript-->
+  <script src="js/jquery-1.11.2.min.js"></script>
+  <script src="js/jquery.mobile-1.4.5.min.js"></script>
+  <script src="js/acciones.js"></script>
+  <script src="phonegap.js" type="text/javascript"></script>
+  <script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+  </script>
+  </head>
+ 
+  <body onLoad="MM_preloadImages('imagenes/popocatepelt2.jpg','imagenes/dr2.jpg','imagenes/fp2.jpg','imagenes/vi.jpg','imagenes/fc2.jpg','imagenes/dc.jpg','imagenes/atlixco2.jpg')">
+  <div data-role="page" id="Principal" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+  <h2>Atlixco(Pueblo Mágico)  </h2>
+    </div>
+   <iframe src="visor/wowslider.html" style="width:300px;height:240px;max-width:100%;overflow:hidden;border:none;padding:0;margin:0 auto;display:block;" marginheight="0" marginwidth="0"></iframe>
+ <!-- Start WOWSlider.com --><!-- End WOWSlider.com --><br><br>
+  <div data-role="main" class="ui-content">
+
+<div>
+  <ul data-role="listview" data-theme="a" class="ui-listview ui-group-theme-a">
+  <li class="ui-first-child ui-last-child">
+  <a href="#Pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+  <h2>Atlixco(Pueblo Magico)</h2>
+  </a>
+  </li>
+   <li class="ui-first-child ui-last-child">
+  <a href="#Pagina3" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+  <h2>Como Llegar</h2>
+  </a>
+  <li class="ui-first-child ui-last-child">
+ <a href="#Pagina2" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+  <h2>Tradiciones</h2>
+  </a>
+  </li>  
+  <li class="ui-first-child ui-last-child">
+  <a href="#Pagina5" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+  <h2>Gastronomia</h2>
+  </a>
+  </li>
+  <li class="ui-first-child ui-last-child">
+  <a href="#Pagina4" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+  <h2>Lugares Turisticos</h2>
+  </a>
+  </li>
+  
+
+  </ul>
+  </div>
+  <br>
+  <br>
+  <a href="http://turismoatlixco.com/"><button> Para Mayor Imformacion</button></a>
+  <div data-role="collapsible" data-content-theme="false">
+  <h1>Sobre El Autor</h1>
+  <div>
+  <center><img src="imagenes/yo.jpg" width="108" height="144"></center> </div>
+  <div>
+  <p>Nombre:Eduardo Morales Corona </p>
+  <p>Edad:17 Años</p>
+  <p>Ocupacion:Estudiante</p>
+  <p>Email:eduardo4g.dam@gmail.com</p>
+   <p>Escuela:CBTis No.16</p>
+    <p>Especialidad:Programacion</p>
+     <p></p>
+  </div>
+  </div>
+  </div>
+ <div data-role="footer" align="center" data-theme="a"data-position="fixed">
+  <p><img src="res/android/mdpi.png"width="56" height="46">
+  </p>
+  <h4>Atlixco(Pueblo Mágico )</h4>
+  </div>
+  </div>
+  </div>
+<div data-role="page" id="Pagina1" data-add-back-btn="true" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+  <h1>Atlixco(Pueblo Mágico )</h1>
+  </div>
+  <div data-role="content">
+ <center><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image14','','imagenes/atlixco2.jpg',1)"><img src="imagenes/atlixco.jpg" width="276" height="217" id="Image14"></a></center>
+ <div data-role="collapsible" data-content-theme="false">
+   <h1>Imformacion</h1>
+   <p>Atlixco es un productor agrícola altamente reconocido a nivel nacional e internacional por su gran variedad y calidad de árboles ornamentales y frutales, así como de plantas y flores para huerto o decoración; así que no dejes pasar la oportunidad de visitar la zona de viveros, en donde encontrarás un paraíso lleno de color y aroma que se presenta en armonía para deleitar a residentes y visitantes de la ciudad.</p><center> <img src="imagenes/a.jpg" width="316" height="180"></center>
+
+   </div>
+  <div data-role="collapsible" data-content-theme="false">
+   <h1>Pueblo Magico</h1>
+<p>Un Pueblo Mágico es una localidad que tiene atributos simbólicos, leyendas, historia, hechos trascendentes, cotidianidad, en fin magia que te emanan en cada una de sus manifestaciones socio-culturales, y que significan hoy día una gran oportunidad para el aprovechamiento turístico. </p>
+
+<p>Durante la inauguración de la Feria Nacional de los Pueblos Mágicos 2015, celebrada en la ciudad de Puebla, Atlixco recibió la denominación como “Pueblo Mágico”, motivo por el cual a partir de ahora el municipio formará parte de este programa, que contribuye a revalorar a un conjunto de poblaciones del país que siempre han estado en el imaginario colectivo de la nación en su conjunto y que representan alternativas frescas y diferentes para los visitantes nacionales y extranjeros.</p>
+
+<p>Su historia, arquitectura, gastronomía, cultura, tradiciones, la zona de monumentos históricos, el cerro de San Miguel, museos, entre otros son parte de esta riqueza con la que cuenta Atlixco, que lo hace diferente a los demás, visitamos y vive la experiencia de un lugar mágico.</p> <center> <img src="imagenes/aS.png" width="347" height="323"></center>
+   </div>
+    <div data-role="collapsible" data-content-theme="false">
+   <h1>Ubicacion</h1>
+   <p>Se ubica a 25 km de la ciudad de Puebla, capital del Estado y cuenta con dos importantes vías de acceso: la Carretera Federal 190 y la moderna Autopista Vía Atlixcáyotl.
+</p>
+  <center> <img src="imagenes/Ubic.png"></center> </div>
+   <br><br>
+   <iframe width="250" height="150" src="https://www.youtube.com/embed/7kD0c6dMcfA" frameborder="0" allowfullscreen></iframe>
+   </div>
+ <div data-role="footer" align="center" data-theme="a"data-position="fixed">
+<p><img src="res/android/mdpi.png"width="56" height="46"></p>
+  <h4>Atlixco(Pueblo Mágico )</h4>
+  </div>
+  </div>
+  </div>
+  <div data-role="page" id="Pagina2" data-add-back-btn="true" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+  <h1>Tradiciones</h1>
+    </div>
+  <div data-role="content">
+  <div data-role="collapsible" data-content-theme="false">
+   <h1>Fiesta de Reyes</h1>
+   <p>Es un majestuoso desfile de 5 km de largo en el que más de 15 carros alegóricos, comparsas y bandas locales recorren las calles principales de la Ciudad. Los reyes magos visitan Atlixco el 5 de Enero gracias a que los niños hacen un Festival de la Ilusión en el que les piden que no se olviden de los más necesitados. Con asistencia de más de 60 mil espectadores la Fiesta de Reyes es desde hace mas de 18 años, un evento que involucra a gran parte de la comunidad del Municipio. ¡¡¡Cada año nuevos carros alegóricos!!! VEN Y DISFRÚTALO</p>
+  <center> <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image6','','imagenes/dr2.jpg',1)"><img src="imagenes/dr (2).jpg" width="283" height="231" id="Image6"></a> </center></div>
+   <div data-role="collapsible" data-content-theme="false">
+   <h1>Fiestas Patrias.</h1>
+   <p>Durante todo el mes de Septiembre se celebran diferentes actividades cívicas, artísticas deportivas y culturales.
+
+Una de las más populares es la cabalgata que se celebra el día 14 de septiembre conmemorando el dia nacional del charro con más de 700 jinetes que recorren las principales calles de la ciudad la cual culmina en una verbena popular en el zócalo
+
+el día 15 de septiembre se celebra el tradicional grito de independencia acompañado del esperado espectáculo de pirotecnia y culmina con la verbena popular donde puedes encontrar la gran variedad de antojitos que son parte de la gastronomía Poblana que es Patrimonio Cultural de la Humanidad.
+
+el día 16 de septiembre  se realiza el desfile Civico- Militar en coordinacion del Sector Educativo</p>
+<center> <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image7','','imagenes/fp2.jpg',1)"><img src="imagenes/fp.jpg" width="283" height="227" id="Image7"></a></center>
+   </div>
+   <div data-role="collapsible" data-content-theme="false">
+   <h1><strong>Atlixcayolt</strong></h1>
+   <p> Significa “gran atlixquedad”, en este gran evento se reúnen 11 regiones etnogeográficas y 7 grupos de etnias del Estado de Puebla.</p>
+  <center> <img src="imagenes/at.jpg" width="264" height="213"></center>
+
+<p>Atlixcáyotl es la máxima fiesta de Atlixco y la segunda más importante a nivel Nacional, expresión de convivencia donde se observa, se aprecia y se disfruta la forma de vestirse, hablar, cantar, bailar y la manera de agradecerle a la naturaleza por los beneficios obtenidos de ella por parte de los participantes.
+  
+  Donde las danzas mas esperadas son la del  Calabazeado de Atlixco, los Tecuanes de Acatlan de Osorio y el rito de los Voladores de la Sierra de Puebla.
+  
+  El festival está acompañado de un convite que se realiza un domingo previo donde se recorren los principales templos de la ciudad y al bailar  por las calles las chinas Atlixqueñas entregan una banderita hecha de papel picado que significa la invitación a la gran fiesta y los charros a pie reparten el mezcal, que lo llevan en una botella adornada de flores de papel china y  de su morral sacan canutos hechos de carrizo, donde sirven el mezcal dándole un sabor especial y esto se convierte en una gran fiesta que termina en los balcones de la Presidencia Municipal, donde las mujeres suben a compartir los dulces y frutas de la region que llevan en sus canastas, esto se realiza el  tercer domingo de septiembre.</p>
+<center><img src="imagenes/at2.jpg" width="277" height="228"></center>
+
+<p>Un sábado antes del festival del Huey Atlixcayotl se realiza dos eventos:
+  
+  La peregrinación de los Danzantes hacia la Ermita de San Miguel para dar gracias por haber llegado con bien desde sus lugares de origen, quienes algunos realizan viajes de 8 horas para participar en la Gran Fiesta.
+  
+  La Elección de la Xochiccihuatl  se realiza un día antes al Huey Atlixcayotl de las 11 etnias que participan y que a través de un jurado se elige a la mujer flor la cual representa  los rasgos autóctonos o indígenas, una lengua materna y porta un traje o indumentaria de diario, preservando su cultura y tradición, quien sera enflorada con una corona por la máxima autoridad del evento y donde ella le hará la entrega el bastón de mando misma que lo acompañara a disfrutar dicho Evento, que se realiza en el cerro de San Miguel (Popocatica o Macuilxochitepetl) desde Netotiloyan (plazuela de la danza)  el último domingo de septiembre.</p>
+<center><img src="imagenes/at3.jpg" width="280" height="233"></center>
+   </div>
+   <div data-role="collapsible" data-content-theme="false">
+   <h1>Villa Iluminada</h1>
+   <p>La “Villa Iluminada” es un recorrido que resalta la belleza arquitectónica de este municipio, embelleciéndola con luz. Se presenta a finales de noviembre y hasta el 6 de enero.
+
+Durante más de cuarenta días las calles forman un circuito de luz y color, vestidas de figuras y escenas alusivas a la navidad, las tradiciones y la identidad de Atlixco.
+
+Los edificios antiguos serán engalanados con luces, lo que destacará su bella arquitectura y valor histórico.</p>
+
+<p>Además, se presentan actividades de distinta índole, como son:
+
+Artísticas
+Culturales
+Deportivas
+Stands de Flores
+Artesanías
+Artículos navideños y de temporada</p>
+
+<p>El recorrido del espectáculo inicia en la Calle Hidalgo, bajando hacia el zócalo de Atlixco, pasa por el callejón Constitución y sigue por la calle 4 norte, frente al Ex Convento del  Carmen, llega a calle Nicolás Bravo, después al boulevard Ferrocarriles y finaliza en el Parque Revolución<p><center><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image11','','imagenes/vi.jpg',1)"><img src="imagenes/vi2.jpg" width="262" height="187" id="Image11"></a></center>
+   </div>
+   <div data-role="collapsible" data-content-theme="false">
+   <h1>Feria de la Cecina</h1>
+   <p>Representativa de la gastronomía tradicional de la región de Atlixco, se distingue por su mezcla de texturas, colores, olores y sabores.  La forma más clásica de comer la Cecina Atlixquense, es en el famoso “taco placero”, en el cual la cecina es asada al carbón, lo que permite disfrutar de la suavidad de este producto, acompañándola con aguacate, queso fresco, ensalada de nopales y chiles en vinagre. Esta feria se lleva a cabo cada año a finales del mes de Julio y principios del mes de agosto.</p>
+ <center>  <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image12','','imagenes/fc2.jpg',1)"><img src="imagenes/fc.jpg" width="262" height="177" id="Image12"></a> </center>  
+ </div>
+   <div data-role="collapsible" data-content-theme="false">
+   <h1>Desfile de las Calaveras</h1>
+   <p>El 02 de Noviembre la Ciudad de Atlixco se viste de calaveras para recorrer las principales calles en un festivo y colorido desfile que busca preservar y rescatar nuestras tradiciones populares.
+
+los jóvenes salen recorriendo las principales calles de la ciudad donde ataviados de trajes típicos o cualquier otra vestimenta llevan sus caras pintadas de calaveras o  con mascara de alucivas a dicho personaje mitológico de México
+
+El desfile tiene la finalidad de respetar y conservar la tradición del día de muertos y dejar a un lado el famoso “Halloween” o “Noche de brujas”</p>
+   <center><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image13','','imagenes/dc.jpg',1)"><img src="imagenes/dc2.jpg" width="265" height="166" id="Image13"></a></center>
+   </div>
+   
+<div data-role="footer" align="center" data-theme="a"data-position="fixed">
+  <p><img src="res/android/mdpi.png"width="56" height="46"></p>
+  <h4>Atlixco(Pueblo Mágico )</h4>
+  </div>
+  </div>
+  </div>
+<div data-role="page" id="Pagina3" data-add-back-btn="true" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+     <h1> Como Llegar</h1>
+   </div>
+ <div data-role="content" >
+  <div>
+    <center> <img src="imagenes/llegar.jpg" width="278" height="226"></center>
+  </div>
+    <p>Atlixco goza de una excelente accesibilidad a través de varias rutas, la infraestructura carretera para ingresar al municipio de Atlixco se encuentra integrada por autopistas, carreteras federales, carreteras libres estatales, que lo comunican al mismo estado de Puebla, a la Zona Metropolitana de la Ciudad de México, al Centro y Sureste del país.
+La infraestructura vial interna y externa con la que cuenta Atlixco permite el tránsito fluido de todo tipo de automóviles que pretendan ingresar a la localidad y recorrerla.</p>
+  <div data-role="collapsible" data-content-theme="false">
+   <h1>Puebla – México.</h1>
+      <p>Desde la capital poblana, localizada a tan sólo 31 km de Atlixco, se puede acceder a través de la Carretera federal 190 pasando por Tonantzintla y Chipilo o bien a través de la Autopista Vía Atlixcáyotl por la zona de Angelópolis.</p>
+       <div>
+    <center> <img src="imagenes/pue-atli.jpg" width="287" height="183"></center>
+    </div>
+      <strong> Carretera Federal 190 México- Puebla.</strong>
+<p>Esta carretera permite la comunicación con la Zona Metropolitana de la Ciudad de México, (20, 116, 842 habitantes), en general, su pavimento se encuentra en buenas condiciones, es de 2 carriles, con reductores de velocidad al cruzar por poblaciones.
+  
+  Esta vía no cuenta con paradores; sin embargo se cuenta con todos los servicios en su trayecto como hoteles, moteles, talleres mecánicos, 5 estaciones de servicio con venta de gasolina y diesel, tienda de conveniencia y servicios sanitarios. Cuenta con señalamiento carretero y turístico en buenas condiciones.</p>
+
+ <strong>Autopista Vía Atlixcayotl</strong>.
+<p>Esta autopista, identificada con el numero 438D y tiene una longitud de 30 km. y posee un amplia densidad circulatoria, ya que se une con la autopista Siglo XXI que une las ciudades de Atlixco y Cuernavaca, esta última ya en el estado de Morelos. Tiene 8 casetas de cobro, Cuenta con cuatro carriles, ofrece un ahorro aproximado de diez minutos en comparación con la vía libre.</p>
+  </div>
+  <div data-role="collapsible" data-content-theme="false">
+   <h1>México, DF – Atlixco.</h1>
+      <p>Desde la ciudad de México, se debe tomar la autopista México-Puebla y antes de entrar a la Angelópolis, doblar a la derecha en el Periférico Ecológico. Unos 15 km después, doblar otra vez a la derecha sobre la autopista a Atlixco o Vía Atlixcáyotl. En total son unos 150 km desde el centro del Distrito Federal.
+
+Si desea viajar en autobús desde la ciudad de México, se deberá tomar un autobús con destino a la CAPU y ahí transbordar algún autobús de las líneas ORO – ERCO con destino a Atlixco. Esta línea de autobuses también cuenta con una terminal en la 2 poniente esquina 33 norte, colonia Amor, en la ciudad de Puebla, con salidas cada 15 min. de 6:00 am a 10:00 pm.</p>
+    <center> <img src="imagenes/df-atlixco.jpg" width="278" height="220"></center>
+  </div>
+  <div data-role="collapsible" data-content-theme="false">
+   <h1>Morelos – Atlixco.</h1>
+  <p>Ruta de carretera Generada entre Morelos, México y Atlixco, PUE, México. La distancia entre estos dos puntos es de 131 km, tiempo estimado 1h 57 min. Hay dos puntos por donde llegar.<p>
+
+ <strong>La Carretera Federal 190 Puebla – Atlixco – Izúcar de Matamoros </strong> <p>Esta vía es casi paralela a la autopista a Atlixco y permite la comunicación con el sur del Estado, es de dos carriles con acotamientos, en su cruce con la zona urbana es de tres carriles por sentido de circulación.
+Cuenta con reductores de velocidad, a lo largo de esta carretera se cuenta con servicios, teléfono, sanitarios, restaurantes, talleres mecánicos, 4 estaciones de servicio con servicios sanitarios y de ellas solo 1 cuenta con tienda de conveniencia.</p>
+
+   <strong>Autopista 425 Siglo XXI</strong> <p>Permite la comunicación con otro mercado turístico importante como son las ciudades de Cuautla y Cuernavaca en el Estado de Morelos.
+Esta vía tiene 4 carriles con acotamientos y rampas para vehículos sin frenos 1 estación de servicio con venta de gasolina y diesel, tienda de conveniencia con sanitarios en buen estado.
+A partir de Atlixco se ingresa a una carretera federal que cuenta en su trayecto, con hoteles, moteles, restaurantes, sanitarios y 7 estaciones de servicio con venta de gasolina y diesel, áreas de 2 gaseras a la altura de Atlixco y Cuautla, se encuentra en su trayecto con restaurantes y sanitarios, tienda de conveniencia con servicios sanitarios adecuados. Esta autopista va de Jantetelco a San Agustín Huixaxtla pasando por la Ciudad de Atlixco.</p>
+      <div>
+    <center> <img src="imagenes/morelos-atlixco.jpg" width="277" height="232"></center>
+    </div>
+    </div>
+  <div data-role="footer" align="center" data-theme="a"data-position="fixed">
+<p><img src="res/android/mdpi.png"width="56" height="46"></p>
+  <h4>Atlixco(Pueblo Mágico )</h4>
+  </div>
+  </div>
+  </div>
+  <div data-role="page" id="Pagina4" data-add-back-btn="true" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+  <h1>Atlixco(Pueblo Mágico )</h1>
+  </div>
+  <div data-role="content">
+ <div data-role="collapsible" data-content-theme="false">
+   <h1>Cerro De San Miguel</h1>
+   <center> <img src="imagenes/b.jpg" width="350" height="262"></center>
+   <p>También conocido como Popocatica (cerro que humea) o Macuilxochitpec (cerro de las cinco flores), es el lugar en donde se realiza la fiesta máxima de Atlixco que se lleva a cabo el último domingo de septiembre y para la que se reúnen los representantes de las once regiones culturales de Puebla. Pero aunque tu visita no coincida con la fecha, el lugar te ofrece una maravillosa vista panorámica y siempre puedes visitar la Capilla de San Miguel.</p>
+ </div>
+  <div data-role="collapsible" data-content-theme="false">
+   <h1>Iglesia Tercera Orden Frasciscana</h1>
+<center><img src="imagenes/p.jpg" width="224" height="168"></center>
+<p>Construida entre los siglos XVII y XVIII por la Tercera Orden  Franciscana, su portada es de un estilo barroco y el trabajo es tan delicado y  excepcional que parece un encaje bordado a mano. El trabajo indígena en su  construcción se hace evidente al estar su fachada decorada con argamasa. En  ella también podrás observar las esculturas de San Pedro, San Pablo, San  Antonio de Padua y San Francisco de Asís.. </p>
+   </div>
+    <div data-role="collapsible" data-content-theme="false">
+   <h1>Centro Cultural del Carmen</h1>
+   <center> <img src="imagenes/r.jpg" width="224" height="168">
+</center> <p>Construido entre 1600 y 1620  lo limita una enorme barda que abarca aproximadamente dos manzanas y es un  claro ejemplo del estilo barroco de la época. Cuando fueron exclaustrados los  religiosos en 1853 el lugar fue convertido en rastro, luego oficinas  gubernamentales, escuela (cuando tiran su torre), cárcel y cuartel para tropas  federales. Ahora es conocido como el Centro Cultural del Carmen y alberga un  pequeño museo arqueológico.</p>
+
+ </div>
+  </div>
+ <div data-role="footer" align="center" data-theme="a"data-position="fixed">
+<p><img src="res/android/mdpi.png"width="56" height="46"></p>
+  <h4>Atlixco(Pueblo Mágico )</h4>
+  </div>
+  </div>
+  </div>
+</div>
+<div data-role="page" id="Pagina5" data-add-back-btn="true" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+  <h1>Atlixco(Pueblo Mágico )</h1>
+  </div>
+  <div data-role="content">
+ <div data-role="collapsible" data-content-theme="false">
+   <h1>Cecina</h1>
+   <center> <img src="imagenes/cecina.jpg" width="303" height="205"></center>
+   <p>Un platillo por el que después de probarlo querrás volver Atlixco, la tradicional cecina de Atlixco, elaborado por cecineros del municipio de manera artesanal este platillo es básico dentro de la cocina atlixquense, acompañado de sus guarniciones de queso, aguacate y nopales.</p>
+ </div>
+  <div data-role="collapsible" data-content-theme="false">
+   <h1>Taco Placero</h1>
+<center><img src="imagenes/taco.jpg" width="270" height="220"></center>
+<p>Mejores no encontraras en Atlixco rellenos de cualquier guisado simple, combinado o no con una dosis de arroz a la mexicana; los hay de chicharrón prensado, tinga, huevos duros, nopales con huevo, longaniza con papas, chicharrón guisado en salsa verde o roja, bistec con nopales, costilla de puerco en adobo, entre otros.</p>
+   </div>
+    <div data-role="collapsible" data-content-theme="false">
+   <h1>Enchiladas</h1>
+   <center> <img src="imagenes/enchilada-de-queso.jpg" width="379" height="207">
+</center> <p>Los rollitos que se forman uno tras otro para cubrirse de una delicada salsa. Rellenas de pollo, bañadas en salsa verde, roja o mole que se acompañan de lechuga, aguacate, crema, queso, rábano y cebolla, listos para degustarse calientitos y bien bañaditos.</p>
+ </div>
+  <div data-role="collapsible" data-content-theme="false">
+   <h1>Barbacoa</h1>
+   <center> <img src="imagenes/barba.jpg" width="352" height="196">
+</center> <p>El estilo de carne con un sabor inigualable que te hará chupar los dedos.
+La carne de borrego hecha en barbacoa es uno de los estilos de popularidad en el centro del país. Elaborada dentro de la tierra con hojas de maguey alcanza su mejor punto en sabor; lo puedes preparar en taco o simplemente con una rica salsa y aguacate. No olvides el consomé que se produce al cocinar la barbacoa.</p>
+</div>
+<div data-role="collapsible" data-content-theme="false">
+   <h1>Mole Poblano</h1>
+   <center> <img src="imagenes/Mole-Poblano.jpg" width="306" height="173">
+</center> <p>El platillo por excelencia en fiestas coloniales que muestra la creatividad de las familias poblanas, delicioso mole dulce representativo de Puebla, está hecho a base de varios chiles y condimentos, agregando una caricia de chocolate. Su consistencia espesa se acompaña comúnmente de una pieza de guajolote o pollo y se agrada a la vista decorándolo con ajonjolí tostado.</p>
+</div>
+  </div>
+ <div data-role="footer" align="center" data-theme="a"data-position="fixed">
+<p><img src="res/android/mdpi.png"width="56" height="46"></p>
+  <h4>Atlixco(Pueblo Mágico )</h4>
+  </div>
+  </div>
+  </div>
+</div>
+  </body>
+</html>
